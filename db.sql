@@ -37,3 +37,18 @@ INSERT INTO address(id,adrs,dadrs,phone,etc) VALUES("admin", "서울특별시 �
 desc address;
 
 select * from address;
+
+create table paymentcard(       --카드 테이블 생성
+    cardnumber varchar(20),
+    cardmm varchar(2),
+    cardyy varchar(2),
+    cardcvc varchar(4),
+    cardpw varchar(4),
+    constraint cardnumber_pk primary key (cardnumber)
+);
+
+desc paymentcard;
+
+INSERT INTO paymentcard(cardnumber, cardmm, cardyy, cardcvc, cardpw) VALUES("1111111111111111","03","21","111","0000"); --샘플데이터 생성
+
+select * from paymentcard;
