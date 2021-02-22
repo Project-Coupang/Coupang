@@ -11,5 +11,10 @@ create table member(        --회원 테이블 생성
     constraint id_pk primary key (id)
 );
 
+desc member;
 
+select * from member;
 
+INSERT INTO MEMBER(id,pw,email,date,phone) VALUES("admin","admin","sample@email.com","20210222","01000000000"); --샘플데이터 생성
+
+select * from member;
