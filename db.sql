@@ -18,3 +18,14 @@ select * from member;
 INSERT INTO MEMBER(id,pw,email,date,phone) VALUES("admin","admin","sample@email.com","20210222","01000000000"); --샘플데이터 생성
 
 select * from member;
+
+create table address(       --주소 테이블 생성
+    id varchar(30) not null,
+    adrs varchar(200),
+    dadrs varchar(100),
+    phone varchar(15),
+    etc varchar(100),
+    foreign key (id) references member (id)
+);
+
+desc address;
