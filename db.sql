@@ -28,4 +28,12 @@ create table address(       --주소 테이블 생성
     foreign key (id) references member (id)
 );
 
+drop table address;
+
 desc address;
+
+INSERT INTO address(id,adrs,dadrs,phone,etc) VALUES("admin", "서울특별시 관악구 남부순환로247 나길 11", "102호", "01000000000", "택배는 문앞에 놔주세요"); --샘플데이터 생성
+
+desc address;
+
+select * from address;
